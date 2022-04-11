@@ -1,5 +1,6 @@
-import { GRequest, GResponse } from "../common/mod.ts";
+import { GRequest, GResponse } from "./common/mod.ts";
 
+/** Represents the options that can be passed to gfetch. */
 export interface GFetchOpt {
   /**
    * If true (default), will follow all 3X status codes. The response that is
@@ -39,6 +40,7 @@ export interface GFetchOpt {
   caCerts?: string | string[];
 }
 
+/** Represents the data that gfetch can be initialized with. */
 export type GFetchInit = string | URL | GRequest;
 
 /**

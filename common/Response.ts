@@ -1,4 +1,4 @@
-import { CRLF, GeminiStatus, GBodyInit } from "./Utils.ts";
+import { CRLF, GeminiStatus, GBodyInit } from "./utils.ts";
 
 /**
  * Represents a Gemini response that is either sent by a server or received by

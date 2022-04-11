@@ -1,4 +1,4 @@
-import { CRLF } from "./Utils.ts";
+import { CRLF } from "./utils.ts";
 
 /**
  * Represents the data that a request can be initialized with.
