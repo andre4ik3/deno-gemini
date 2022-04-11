@@ -41,6 +41,12 @@ export interface GFetchOpt {
 
 export type GFetchInit = string | URL | GRequest;
 
+/**
+ * Fetches a Gemini resource from a URL.
+ * @param u The URL to fetch (or request object).
+ * @param o The options to use.
+ * @returns A promise that resolves to the response.
+ */
 export async function gfetch(u: GFetchInit, o?: GFetchOpt): Promise<GResponse> {
   const url = typeof u === "string" ? new URL(u) : u instanceof URL ? u : u.url;
 
@@ -75,3 +81,6 @@ export async function gfetch(u: GFetchInit, o?: GFetchOpt): Promise<GResponse> {
 
   return resp;
 }
+
+/** Alias for gfetch. */
+export const gemfetch = gfetch;

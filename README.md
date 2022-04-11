@@ -5,7 +5,7 @@
 The client was inspired a lot by modern `fetch` API. It is really nice to use:
 
 ```ts
-import { gfetch } from "...";
+import { gfetch } from "https://deno.land/x/gemfetch/mod.ts";
 
 // Will automatically follow redirects, and throw errors on non-2X or 3X codes.
 const response = await gfetch("gemini://gemini.circumlunar.space");
